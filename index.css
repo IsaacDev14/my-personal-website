@@ -8,6 +8,15 @@ body{
     background-color: rgb(211, 198, 182);
 }
 
+body.dark-mode {
+    background-color: #170b43;
+    color: #fff;
+}
+body.dark-mode header {
+    background-color: #0d072e;
+}
+
+
 header {
     position: fixed;                
     top: 0;                         
@@ -77,7 +86,7 @@ nav ul li a:hover{
 
 #hero p{
     font-size: 1.5em;
-    background-color: rgba(230, 230, 230, 0.5);
+    background-color: rgba(230, 230, 230, 0.2);
     color: rgb(5, 5, 5);
     margin: 0;
     padding: 0;
@@ -106,12 +115,43 @@ main section #Image{
     height: 50%;
 }
 
-.Images{
-    background-image: url('./images/code3.jpg');
-    background-size: cover;
-    height: 140vh;
-    background-repeat: no-repeat; /* Prevents image from repeating */
-    background-position: center;
-    color: white;
-    
+
+
+#dark-mode-toggle {
+    padding: 5px 5px; 
+    font-size: 12px;   
+    border-radius: 5px;  
+    border: none;        
+    background-color: #FF69B4; 
+    color: white;        
+    cursor: pointer;     
+    transition: all 0.3s ease; 
+    margin: auto;
 }
+
+
+.Images {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: double;
+  }
+  
+  .carousel-container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 2s ease-in-out;
+  }
+  
+  .carousel img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
